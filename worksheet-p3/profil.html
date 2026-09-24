@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil hobi membaca novel dan fanfiction serta menonton anime.">
+  <title>Novel, Fanfiction, dan Anime Favorit</title>
+</head>
+<body>
+  <header>
+    <h1>Novel, Fanfiction, dan Anime Favorit</h1>
+    <p>Halaman ini berisi hobi saya membaca cerita dan menikmati anime.</p>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-karya">Daftar karya</a></li>
+        <li><a href="#form-catatan">Tambah catatan</a></li>
+        <li><a href="#tentang-saya">Tentang saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daftar-karya">
+      <h2>Bacaan dan Tontonan Saya</h2>
+      <p>Berikut beberapa novel, fanfiction, dan anime yang saya ikuti.</p>
+
+      <figure>
+        <img src="novel-anime.svg"
+             alt="Ilustrasi sebuah novel terbuka di samping layar yang menampilkan tokoh anime"
+             width="640"
+             height="360"
+             loading="lazy">
+        <figcaption>Ilustrasi hobi membaca cerita dan menonton anime.</figcaption>
+      </figure>
+
+      <table>
+        <caption>Daftar bacaan dan tontonan saya</caption>
+        <thead>
+          <tr>
+            <th scope="col">Jenis karya</th>
+            <th scope="col">Judul atau fandom</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Novel</th>
+            <td>Beastmaster: Aku Bisa Melihat Jalur Evolusi Tersembunyi</td>
+            <td>Sedang dibaca</td>
+          </tr>
+          <tr>
+            <th scope="row">Fanfiction</th>
+            <td>Naruto: Aku Dapat Bakat Pertukaran Yang Terhubung Berbagai Dunia</td>
+            <td>Sedang dibaca</td>
+          </tr>
+          <tr>
+            <th scope="row">Anime</th>
+            <td>Sword Art Online</td>
+            <td>selesai</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form-catatan">
+      <h2>Tambah Catatan Karya</h2>
+      <p>Form ini memakai validasi bawaan browser. Data belum tersimpan ke server.</p>
+
+      <form action="#" method="get">
+        <p>
+          <label for="judul-karya">Judul karya atau fanfiction</label>
+          <input type="text" id="judul-karya" name="judul" maxlength="100" required>
+        </p>
+
+        <p>
+          <label for="jenis-karya">Jenis karya</label>
+          <select id="jenis-karya" name="jenis" required>
+            <option value="" selected disabled>Pilih jenis karya</option>
+            <option value="novel">Novel</option>
+            <option value="fanfiction">Fanfiction</option>
+            <option value="anime">Anime</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="rating">Rating pribadi (1 sampai 5)</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" step="1" required>
+        </p>
+
+        <button type="submit">Kirim catatan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="tentang-saya">
+    <p>Naufal Raffy Pasya · NIM 25523139 · Kelas C · 2026</p>
+  </footer>
+</body>
+</html>
