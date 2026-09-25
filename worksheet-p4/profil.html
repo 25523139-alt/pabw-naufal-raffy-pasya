@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil hobi membaca novel dan fanfiction serta menonton anime.">
+  <title>Novel, Fanfiction, dan Anime Favorit</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body id="atas">
+  <header class="site-header">
+    <div class="header-baris">
+      <h1>Novel, Fanfiction, dan Anime Favorit</h1>
+
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#daftar-karya">Daftar karya</a></li>
+          <li><a href="#form-catatan">Tambah catatan</a></li>
+          <li><a href="#tentang-saya">Tentang saya</a></li>
+        </ul>
+      </nav>
+
+      <div class="tema-pengalih">
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        <label for="tema" class="tombol-tema">Tema gelap</label>
+      </div>
+    </div>
+    <p>Halaman ini berisi hobi saya membaca cerita dan menikmati anime.</p>
+  </header>
+
+  <main>
+    <section id="daftar-karya" aria-labelledby="judul-daftar">
+      <h2 id="judul-daftar">Bacaan dan Tontonan Saya</h2>
+      <p>Berikut beberapa novel, fanfiction, dan anime yang saya ikuti.</p>
+
+      <figure>
+        <img src="novel-anime.svg"
+             alt="Ilustrasi sebuah novel terbuka di samping layar yang menampilkan tokoh anime"
+             width="640"
+             height="360"
+             loading="lazy">
+        <figcaption>Ilustrasi hobi membaca cerita dan menonton anime.</figcaption>
+      </figure>
+
+      <div class="katalog" aria-label="Daftar bacaan dan tontonan saya">
+        <article class="kartu">
+          <h3>Beastmaster: Aku Bisa Melihat Jalur Evolusi Tersembunyi</h3>
+          <dl>
+            <div><dt>Jenis karya</dt><dd>Novel</dd></div>
+            <div><dt>Status</dt><dd>Sedang dibaca</dd></div>
+          </dl>
+        </article>
+
+        <article class="kartu">
+          <h3>Naruto: Aku Dapat Bakat Pertukaran Yang Terhubung Berbagai Dunia</h3>
+          <dl>
+            <div><dt>Jenis karya</dt><dd>Fanfiction</dd></div>
+            <div><dt>Status</dt><dd>Sedang dibaca</dd></div>
+          </dl>
+        </article>
+
+        <article class="kartu">
+          <h3>Sword Art Online</h3>
+          <dl>
+            <div><dt>Jenis karya</dt><dd>Anime</dd></div>
+            <div><dt>Status</dt><dd>Selesai</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="form-catatan" aria-labelledby="judul-form">
+      <h2 id="judul-form">Tambah Catatan Karya</h2>
+      <p>Form ini memakai validasi bawaan browser. Data belum tersimpan ke server.</p>
+
+      <form action="#" method="get">
+        <div class="form-kolom">
+          <label for="judul-karya">Judul karya atau fanfiction</label>
+          <input type="text" id="judul-karya" name="judul" maxlength="100" required
+                 aria-describedby="pesan-judul">
+          <span class="pesan-galat" id="pesan-judul">Isi judul karya, maksimal 100 karakter.</span>
+        </div>
+
+        <div class="form-kolom">
+          <label for="jenis-karya">Jenis karya</label>
+          <select id="jenis-karya" name="jenis" required aria-describedby="pesan-jenis">
+            <option value="" selected disabled>Pilih jenis karya</option>
+            <option value="novel">Novel</option>
+            <option value="fanfiction">Fanfiction</option>
+            <option value="anime">Anime</option>
+          </select>
+          <span class="pesan-galat" id="pesan-jenis">Pilih salah satu jenis karya.</span>
+        </div>
+
+        <div class="form-kolom">
+          <label for="rating">Rating pribadi (1 sampai 5)</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" step="1" required
+                 aria-describedby="pesan-rating">
+          <span class="pesan-galat" id="pesan-rating">Masukkan angka bulat dari 1 sampai 5.</span>
+        </div>
+
+        <button type="submit">Kirim catatan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="tentang-saya">
+    <p>Naufal Raffy Pasya · NIM 25523139 · Kelas C · 2026</p>
+  </footer>
+</body>
+</html>

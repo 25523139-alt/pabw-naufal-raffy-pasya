@@ -1,0 +1,116 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+figure img {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+figcaption {
+  color: var(--color-fg);
+  font-size: var(--text-sm);
+}
+
+.kartu {
+  padding: var(--card-pad);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-1);
+}
+
+.kartu dl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-block-start: var(--space-3);
+}
+
+.kartu dl div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.kartu dt {
+  font-weight: 700;
+}
+
+.kartu dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.form-kolom label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+  font: inherit;
+}
+
+button,
+.tombol-tema {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.tombol-tema:hover {
+  filter: brightness(0.95);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.pengalih-tema {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.pengalih-tema:focus-visible + .tombol-tema {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+:is(input, select, textarea):user-invalid {
+  border: 2px solid var(--color-danger);
+}
+
+.pesan-galat {
+  display: none;
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.form-kolom:has(:user-invalid) .pesan-galat {
+  display: block;
+}

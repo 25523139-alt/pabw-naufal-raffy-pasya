@@ -1,0 +1,27 @@
+/* Tema otomatis mengikuti pengaturan sistem; hanya token semantik yang berubah. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: var(--gray-900);
+    --color-fg: var(--slate-200);
+    --color-surface: var(--slate-800);
+    --color-border: var(--slate-500);
+    --color-primary: color-mix(in srgb, var(--red-700) 55%, var(--white));
+    --color-danger: var(--red-300);
+    --color-focus: var(--color-primary);
+    --shadow-1: var(--shadow-dark);
+  }
+}
+
+/* Pengalih manual ditulis sesudah media query agar menang pada sistem gelap. */
+:root:has(#tema:checked) {
+  color-scheme: dark;
+  --color-bg: var(--gray-900);
+  --color-fg: var(--slate-200);
+  --color-surface: var(--slate-800);
+  --color-border: var(--slate-500);
+  --color-primary: color-mix(in srgb, var(--red-700) 55%, var(--white));
+  --color-danger: var(--red-300);
+  --color-focus: var(--color-primary);
+  --shadow-1: var(--shadow-dark);
+}
