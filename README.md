@@ -15,6 +15,13 @@ Topik halaman saya: hobi membaca novel dan fanfiction serta menonton anime.
 - Kolom form: judul karya, jenis karya, rating pribadi (1–5)
 - Gambar: `novel-anime.svg`
 
+## Pertemuan 4 — Design token halaman profil
+
+- Warna utama draf: `#B00020` (merah tua), dipakai konsisten untuk judul, tautan, tombol, dan fokus. Teks putih pada warna utama memiliki rasio kontras sekitar 7,33:1.
+- Berkas halaman: `worksheet-p4/profil.html`, `tokens.css`, `base.css`, `layout.css`, `komponen.css`, dan `tema.css`.
+- Token warna dipisahkan menjadi nilai primitif dan peran semantik. Tema gelap memetakan ulang token semantik dan mencerahkan warna utama agar teks tombol tetap terbaca.
+- Warna merah pada draf mengikuti warna kesukaan saya; tema gelap mencerahkan merah yang sama agar kontras tetap terjaga.
+
 ### Catatan penggunaan AI
 
-AI membantu menyusun kerangka HTML dan ilustrasi SVG untuk halaman ini. Saya memilih topik dan mengisi daftar karya sesuai bacaan serta tontonan saya.
+AI membantu menyusun kerangka HTML dan ilustrasi SVG untuk Pertemuan 3, serta draf token dan CSS untuk Pertemuan 4. Saya akan meninjau kode dan hasil tampilannya sebelum penyerahan.
