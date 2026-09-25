@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Novel dan anime</title>
+  <desc id="desc">Buku terbuka berada di samping layar dengan tokoh bergaya ilustrasi.</desc>
+  <rect width="640" height="360" rx="24" fill="#f4eee4"/>
+  <circle cx="92" cy="76" r="28" fill="#e5b963" opacity=".55"/>
+  <path d="M62 268h250l-17 28H80z" fill="#70534a"/>
+  <path d="M82 132c42-15 83-11 118 13v116c-37-23-78-27-118-12z" fill="#fffaf0" stroke="#513f3a" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200 145c36-24 77-28 118-13v117c-39-15-80-11-118 12z" fill="#fff4db" stroke="#513f3a" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200 145v116" fill="none" stroke="#c9b8a0" stroke-width="4"/>
+  <path d="M101 162c26-7 54-5 78 5M101 184c26-7 54-5 78 5M101 206c26-7 54-5 78 5M222 167c25-10 51-12 78-7M222 190c25-10 51-12 78-7M222 213c25-10 51-12 78-7" fill="none" stroke="#c3aa8d" stroke-width="4" stroke-linecap="round"/>
+  <rect x="375" y="66" width="203" height="154" rx="13" fill="#37465e"/>
+  <rect x="388" y="79" width="177" height="127" rx="6" fill="#cde7ed"/>
+  <path d="M388 177c35-40 66-39 92-4 23-29 52-28 85 4v29H388z" fill="#91bdcb"/>
+  <path d="M452 158c0-29 19-47 43-47s43 18 43 47v14h-86z" fill="#3b3144"/>
+  <circle cx="495" cy="150" r="26" fill="#f2c3a1"/>
+  <path d="M469 145c5-24 17-36 34-36 17 0 29 12 35 36-15-4-24-15-29-23-9 13-22 21-40 23z" fill="#594568"/>
+  <circle cx="485" cy="151" r="2.8" fill="#493c47"/>
+  <circle cx="505" cy="151" r="2.8" fill="#493c47"/>
+  <path d="M490 163c4 4 8 4 12 0" fill="none" stroke="#a65f63" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M442 231h70l19 23H423z" fill="#52627a"/>
+  <rect x="354" y="253" width="246" height="15" rx="7" fill="#70534a"/>
+  <path d="M156 285h313" stroke="#513f3a" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+</svg>
