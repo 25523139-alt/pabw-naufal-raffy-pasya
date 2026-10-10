@@ -1,0 +1,43 @@
+/* Mobile-first base: the profile and its portfolio stack in one column. */
+#profil-pabw .profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+#profil-pabw .profile-sidebar,
+#profil-pabw .profile-projects,
+#kartu-proyek > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+#kartu-proyek {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+#daftar-keahlian li {
+  padding: .55rem .8rem;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--panel-soft);
+  font-size: .8rem;
+}
+
+/* Tablet: two project cards fit side by side once the content has room. */
+@media (min-width: 48rem) {
+  #kartu-proyek {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: the profile becomes a sidebar next to the project content. */
+@media (min-width: 60rem) {
+  #profil-pabw .profile-layout {
+    grid-template-columns: minmax(16rem, .7fr) minmax(0, 1.3fr);
+    align-items: start;
+    gap: 3rem;
+  }
+}
