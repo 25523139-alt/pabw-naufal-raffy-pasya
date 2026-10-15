@@ -1,0 +1,96 @@
+/* Mobile-first base: the profile and its portfolio stack in one column. */
+#profil-pabw .profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+#profil-pabw .profile-sidebar,
+#profil-pabw .profile-projects,
+#kartu-proyek > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+#kartu-proyek {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+#daftar-keahlian li {
+  padding: .55rem .8rem;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--panel-soft);
+  font-size: .8rem;
+}
+
+/* Tablet: two project cards fit side by side once the content has room. */
+@media (min-width: 48rem) {
+  #kartu-proyek {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: the profile becomes a sidebar next to the project content. */
+@media (min-width: 60rem) {
+  #profil-pabw .profile-layout {
+    grid-template-columns: minmax(16rem, .7fr) minmax(0, 1.3fr);
+    align-items: start;
+    gap: 3rem;
+  }
+}
+
+/* Meeting 9: filter controls and per-field form feedback. */
+.project-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.project-filter {
+  padding: .5rem .8rem;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: transparent;
+  font: .72rem "Courier New", monospace;
+  letter-spacing: .04em;
+  cursor: pointer;
+}
+
+.project-filter:hover,
+.project-filter:focus-visible {
+  border-color: var(--ice);
+  color: var(--ink);
+}
+
+.project-filter.active {
+  border-color: var(--red);
+  color: var(--ink);
+  background: rgba(237, 76, 92, .12);
+}
+
+.empty-state {
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: var(--panel);
+}
+
+.field-error {
+  display: block;
+  min-height: 1.2rem;
+  color: #ff9ca5;
+  font-size: .8rem;
+}
+
+.form-status {
+  color: var(--ice);
+  font-size: .88rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: .58;
+}
